@@ -1,0 +1,41 @@
+@import "sections/intro"
+@import "sections/work"
+@import "sections/skills"
+@import "sections/about"
+html, body
+  overflow: hidden
+  font-family: proxima-nova, sans-serif
+  font-style: normal
+
+.section 
+  width: 100vw
+  height: 100vh
+  display: inline-block
+
+
+#Work, #Skills 
+  background-color: #FDFDFD
+
+#Work .sec_wrapper, #Skills .sec_wrapper 
+  padding: 7%
+
+#Work .sec_header , #Skills .sec_header 
+  text-align: left
+  width: 600px
+
+#Work .sec_content , #Skills .sec_content 
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+#Work .sec_header h1, #Skills .sec_header h1, #About .sec_header h1
+  font-weight: 900
+  font-size: 2.4em
+  text-transform: uppercase
+  padding-bottom: 5px
+  border-bottom: 3px solid
+  border-block-start-width: 1em
+  width: fit-content
+
+#Work .sec_header .sub_header, #Skills .sec_header .sub_header
+  line-height: 30px

@@ -1,36 +1,269 @@
-@import "sections/intro"
-@import "sections/work"
-@import "sections/skills"
-@import "sections/about"
-@import "queries"
+// @import "sections/intro"
+// @import "sections/work"
+// @import "sections/skills"
+// @import "sections/about"
+// @import "queries"
+
+
+// TABLE OF CONTENTS
+  // Global Styles
+  // Intro Sytles
+  // Work Sytles
+  // Skills Sytles
+  // About Sytles
+
+
+
+// Global Styles
 html, body
   overflow: hidden
   font-family: proxima-nova, sans-serif
   font-style: normal
 
-#Work, #Skills 
-  background-color: #FDFDFD
+.icon 
+  width: 25px
+.tile
+  width: 45px
+.profile
+  width: 200px
+ul 
+  list-style-type: none
+  padding: 0
 
-#Work .sec_wrapper, #Skills .sec_wrapper 
-  padding: 7%
+#Intro, #Work, #Skills, #About
+  .sec_wrapper
+    padding: 0 20px
+    .sec_header
+      h1 
+        font-weight: 900
+        font-size: 2.5em
+        border-bottom: 3px solid #000
+        width: fit-content
+      .sub_header
+        line-height: 30px
 
-#Work .sec_header , #Skills .sec_header 
-  text-align: left
-  width: 600px
 
-#Work .sec_content , #Skills .sec_content 
-  display: flex
-  align-items: center
-  justify-content: flex-start
+#Intro, #About 
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)
 
-#Work .sec_header h1, #Skills .sec_header h1, #About .sec_header h1
-  font-weight: 900
-  font-size: 2.4em
-  text-transform: uppercase
-  padding-bottom: 5px
-  border-bottom: 3px solid
-  border-block-start-width: 1em
-  width: fit-content
 
-#Work .sec_header .sub_header, #Skills .sec_header .sub_header
-  line-height: 30px
+// Intro Styles
+#Intro .sec_wrapper 
+  .sec_header
+    h1 
+      text-shadow: -5px 10px 11px rgba(0, 0, 0, .6)
+      font-size: 3.6em
+      border-bottom: none
+      color: #fff
+      margin: 0
+      line-height: 80px
+      letter-spacing: 10px
+    .sub_header
+      font-size: 1.1em
+      color: #fff
+      line-height: 30px
+  .name-cont
+    font-size: 1.1em
+    color: #fff
+    letter-spacing: 5px
+
+  .sec_content 
+
+// Work Styles
+#Work .sec_wrapper 
+  .sec_header
+    margin-top: 100px
+  .sec_content
+    margin-bottom: 100px
+    .portfolio_work
+      .cards
+        width: 100%
+        display: flex
+        display: -webkit-flex
+        flex-wrap: wrap
+        justify-content: center
+        -webkit-justify-content: center 
+        .cards
+    width: 100%
+    display: flex
+    display: -webkit-flex
+    flex-wrap: wrap
+    justify-content: center
+    -webkit-justify-content: center
+    .card__img
+        visibility: hidden
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        width: 100%
+        height: 145px
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+
+    .card__info-hover 
+        position: absolute
+        padding: 16px
+        width: 100%
+        opacity: 0
+        top: 0
+
+    .card__img--hover
+        transition: 0.2s all ease-out
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        width: 100%
+        position: absolute
+        height: 145px
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        top: 0
+
+    .card 
+        margin-bottom: 25px
+        transition: all .4s cubic-bezier(0.175, 0.885, 0, 1)
+        background-color: #fff
+        width: 380px
+        position: relative
+        border-radius: 8px
+        overflow: hidden
+        box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1)
+        box-sizing: border-box
+
+    .card:hover 
+        box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1)
+        transform: scale(1.10, 1.10)
+
+    .card__info 
+        z-index: 2
+        background-color: #fff
+        border-bottom-left-radius: 8px
+        border-bottom-right-radius: 8px
+        padding: 10px 20px 10px 20px
+        height: 90px
+        width: 340px
+        text-align: left
+
+    .card__info a 
+        height: 20px
+        float: right
+        margin: 0 5px
+
+    .card__info a img 
+        width: 20px
+        height: 20px
+
+    .card__description
+        font-size: 13px
+        letter-spacing: 2px
+        font-weight: 500
+        color: #000
+        display: block
+
+    .card__title 
+        margin-top: 0px
+        margin-bottom: 10px
+        font-weight: 900
+        font-size: 1.1em
+        border-bottom: 2px solid #000
+        width: fit-content
+        display: inline-block
+        color: #000
+
+    .card:hover .card__img--hover
+        height: 100%
+        opacity: 0.3
+
+    .card:hover .card__info 
+        background-color: transparent
+        position: relative
+
+    .card:hover .card__info-hover
+        opacity: 1
+
+// Skills Styles
+#Skills .sec_wrapper 
+  .sec_header
+    margin-bottom: 100px
+  .sec_content 
+    .skills
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-top: 75px
+      div
+        text-align: center
+        margin-top: 25px
+        width: 150px
+        .tiles-cont
+          width: 150px
+          height: 100px
+        h3 
+          margin: 10px auto
+          font-weight: 600
+          width: fit-content
+          border-bottom: 2px solid #000
+        ul 
+          li 
+            line-height: 22px
+            text-transform: uppercase
+
+// About Styles
+#About .sec_wrapper 
+  .sec_header
+    top: 100px
+    position: absolute
+    z-index: 1
+    color: #ffffff
+    h1 
+      border-bottom: 3px solid #ffffff
+    .sub_header
+      font-size: 1.5em
+      font-weight: 900
+      width: 310px
+    .about_me 
+      p
+        line-height: 35px
+        width: 350px 
+      button 
+        background-color: #000
+        font-size: 1.6em
+        color: #ffffff
+        padding: 6px 10px
+        font-weight: 600
+        border-radius: 4px
+        border: none
+      ul
+        li 
+          display: inline-block
+          margin-right: 10px
+  .sec_content 
+    div
+      img
+        width: 160%
+
+
+
+// #Work .sec_wrapper, #Skills .sec_wrapper 
+//   padding: 7%
+
+// #Work .sec_header , #Skills .sec_header 
+//   text-align: left
+//   width: 600px
+
+// #Work .sec_content , #Skills .sec_content 
+//   display: flex
+//   align-items: center
+//   justify-content: flex-start
+
+// #Work .sec_header h1, #Skills .sec_header h1, #About .sec_header h1
+//   font-weight: 900
+//   font-size: 2.4em
+//   text-transform: uppercase
+//   padding-bottom: 5px
+//   border-bottom: 3px solid
+//   border-block-start-width: 1em
+//   width: fit-content
+
+// #Work .sec_header .sub_header, #Skills .sec_header .sub_header
+//   line-height: 30px

@@ -209,19 +209,19 @@ ul {
       text-transform: uppercase; }
 
 #About .sec_wrapper .sec_header {
-  top: 100px;
+  top: 50px;
   position: absolute;
   z-index: 1;
   color: #ffffff; }
   #About .sec_wrapper .sec_header h1 {
-    border-bottom: 3px solid #ffffff; }
+    border-bottom: 3px solid #ffffff;
+    margin-top: 0; }
   #About .sec_wrapper .sec_header .sub_header {
     font-size: 1.5em;
     font-weight: 900;
     width: 280px; }
   #About .sec_wrapper .sec_header .about_me p {
-    line-height: 35px;
-    width: 280px; }
+    line-height: 35px; }
   #About .sec_wrapper .sec_header .about_me button {
     background-color: #000;
     font-size: 1.6em;
@@ -237,7 +237,7 @@ ul {
 #About .sec_wrapper .sec_content {
   position: absolute;
   z-index: -1;
-  top: 160px; }
+  bottom: 0; }
   #About .sec_wrapper .sec_content div img {
     width: 160%; }
 

@@ -1,3 +1,23 @@
+@media (min-width: 350px) {
+  #Intro .sec_wrapper h1 {
+    font-size: 3.2em !important;
+    line-height: 70px !important; } }
+
+@media (min-width: 370px) {
+  #Intro .sec_wrapper h1 {
+    font-size: 3.4em !important;
+    line-height: 75px !important; } }
+
+@media (min-width: 390px) {
+  #Intro .sec_wrapper h1 {
+    font-size: 3.8em !important;
+    line-height: 80px !important; } }
+
+@media (min-width: 410px) {
+  #Intro .sec_wrapper h1 {
+    font-size: 4.2em !important;
+    line-height: 85px !important; } }
+
 html, body {
   overflow: hidden;
   font-family: proxima-nova, sans-serif;
@@ -26,24 +46,26 @@ ul {
       border-bottom: 3px solid #000;
       width: fit-content; }
     #Intro .sec_wrapper .sec_header .sub_header, #Work .sec_wrapper .sec_header .sub_header, #Skills .sec_wrapper .sec_header .sub_header, #About .sec_wrapper .sec_header .sub_header {
-      line-height: 30px; }
+      line-height: 30px;
+      max-width: 350px; }
 
 #Intro, #About {
   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); }
 
 #Intro .sec_wrapper .sec_header h1 {
   text-shadow: -5px 10px 11px rgba(0, 0, 0, 0.6);
-  font-size: 2.3em;
+  font-size: 2.8em;
   border-bottom: none;
   color: #fff;
   margin: 0;
-  line-height: 55px;
-  letter-spacing: 10px; }
+  line-height: 65px;
+  letter-spacing: 11px; }
 
 #Intro .sec_wrapper .sec_header .sub_header {
   font-size: 1.1em;
   color: #fff;
-  line-height: 30px; }
+  line-height: 30px;
+  margin-bottom: 0; }
 
 #Intro .sec_wrapper .name-cont {
   font-size: 1.1em;
@@ -149,6 +171,13 @@ ul {
 #Skills .sec_wrapper .sec_header {
   margin-bottom: 100px; }
 
+#Skills .sec_wrapper .sec_content .tile-cont-mobile {
+  position: relative;
+  top: 50px;
+  left: -30px;
+  transform: rotate(-10deg);
+  width: 400px; }
+
 #Skills .sec_wrapper .sec_content .skills {
   display: flex;
   justify-content: space-between;
@@ -157,7 +186,7 @@ ul {
   #Skills .sec_wrapper .sec_content .skills div {
     text-align: center;
     margin-top: 25px;
-    width: 150px; }
+    width: 130px; }
     #Skills .sec_wrapper .sec_content .skills div .tiles-cont {
       width: 150px;
       height: 100px; }

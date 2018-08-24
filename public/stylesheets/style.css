@@ -1,21 +1,21 @@
 @media (min-width: 350px) {
   #Intro .sec_wrapper h1 {
-    font-size: 3.2em !important;
+    font-size: 3em !important;
     line-height: 70px !important; } }
 
 @media (min-width: 370px) {
   #Intro .sec_wrapper h1 {
-    font-size: 3.4em !important;
+    font-size: 3.2em !important;
     line-height: 75px !important; } }
 
 @media (min-width: 390px) {
   #Intro .sec_wrapper h1 {
-    font-size: 3.8em !important;
+    font-size: 3.6em !important;
     line-height: 80px !important; } }
 
 @media (min-width: 410px) {
   #Intro .sec_wrapper h1 {
-    font-size: 4.2em !important;
+    font-size: 4em !important;
     line-height: 85px !important; } }
 
 html, body {
@@ -39,6 +39,7 @@ ul {
 #Intro, #Work, #Skills, #About {
   overflow-x: hidden; }
   #Intro .sec_wrapper, #Work .sec_wrapper, #Skills .sec_wrapper, #About .sec_wrapper {
+    overflow-x: hidden;
     padding: 0 20px; }
     #Intro .sec_wrapper .sec_header h1, #Work .sec_wrapper .sec_header h1, #Skills .sec_wrapper .sec_header h1, #About .sec_wrapper .sec_header h1 {
       font-weight: 900;
@@ -54,7 +55,7 @@ ul {
 
 #Intro .sec_wrapper .sec_header h1 {
   text-shadow: -5px 10px 11px rgba(0, 0, 0, 0.6);
-  font-size: 2.8em;
+  font-size: 2.7em;
   border-bottom: none;
   color: #fff;
   margin: 0;
@@ -172,6 +173,7 @@ ul {
   margin-bottom: 100px; }
 
 #Skills .sec_wrapper .sec_content .tile-cont-mobile {
+  display: none;
   position: relative;
   top: 50px;
   left: -30px;

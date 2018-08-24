@@ -1,7 +1,4 @@
-// @import "sections/intro"
-// @import "sections/work"
-// @import "sections/skills"
-// @import "sections/about"
+
 @import "queries"
 
 
@@ -19,6 +16,7 @@ html, body
   overflow: hidden
   font-family: proxima-nova, sans-serif
   font-style: normal
+  height: 100vh
 
 .icon 
   width: 25px
@@ -47,6 +45,13 @@ ul
 
 #Intro, #About 
   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)
+
+#Work, #Skills 
+  .sec_wrapper
+    .sec_header
+      h1, p
+        text-align: center
+        margin: 0 auto
 
 
 // Intro Styles
@@ -86,13 +91,7 @@ ul
         flex-wrap: wrap
         justify-content: center
         -webkit-justify-content: center 
-        .cards
-    width: 100%
-    display: flex
-    display: -webkit-flex
-    flex-wrap: wrap
-    justify-content: center
-    -webkit-justify-content: center
+
     .card__img
         visibility: hidden
         background-size: cover
@@ -127,6 +126,7 @@ ul
         transition: all .4s cubic-bezier(0.175, 0.885, 0, 1)
         background-color: #fff
         width: 100%
+        max-width: 400px
         position: relative
         border-radius: 8px
         overflow: hidden
@@ -143,7 +143,7 @@ ul
         border-bottom-left-radius: 8px
         border-bottom-right-radius: 8px
         height: 80px
-        width: 90%
+        max-width: 310px
 
     .card__info a 
         height: 20px
@@ -254,28 +254,3 @@ ul
       img
         width: 160%
 
-
-
-// #Work .sec_wrapper, #Skills .sec_wrapper 
-//   padding: 7%
-
-// #Work .sec_header , #Skills .sec_header 
-//   text-align: left
-//   width: 600px
-
-// #Work .sec_content , #Skills .sec_content 
-//   display: flex
-//   align-items: center
-//   justify-content: flex-start
-
-// #Work .sec_header h1, #Skills .sec_header h1, #About .sec_header h1
-//   font-weight: 900
-//   font-size: 2.4em
-//   text-transform: uppercase
-//   padding-bottom: 5px
-//   border-bottom: 3px solid
-//   border-block-start-width: 1em
-//   width: fit-content
-
-// #Work .sec_header .sub_header, #Skills .sec_header .sub_header
-//   line-height: 30px

@@ -1,19 +1,29 @@
-@media (min-width: 350px) {
+@media screen and (min-width: 350px) {
   #Intro .sec_wrapper h1 {
     font-size: 3em !important;
     line-height: 70px !important; }
+  #Work .sec_wrapper .sec_content .card__info {
+    padding: 10px 20px; }
+    #Work .sec_wrapper .sec_content .card__info h3 {
+      margin: 0 !important; }
+    #Work .sec_wrapper .sec_content .card__info a {
+      margin-top: 5px !important; }
+    #Work .sec_wrapper .sec_content .card__info .card__description {
+      padding-top: 4px !important;
+      font-size: .8em !important;
+      display: block !important; }
   #Skills .sec_wrapper .sec_content .tile-cont-mobile {
     left: -35px !important;
     transform: scale(1.2) rotate(-10deg) !important; } }
 
-@media (min-width: 370px) {
+@media screen and (min-width: 370px) {
   #Intro .sec_wrapper h1 {
     font-size: 3.2em !important;
     line-height: 75px !important; }
   #Skills .sec_wrapper .sec_content .tile-cont-mobile {
     left: -25px !important; } }
 
-@media (min-width: 390px) {
+@media screen and (min-width: 390px) {
   #Intro .sec_wrapper h1 {
     font-size: 3.6em !important;
     line-height: 80px !important; }
@@ -21,15 +31,34 @@
     left: -20px !important;
     transform: scale(1.4) rotate(-10deg) !important; } }
 
-@media (min-width: 410px) {
+@media screen and (min-width: 410px) {
   #Intro .sec_wrapper h1 {
     font-size: 4em !important;
     line-height: 85px !important; } }
 
+@media screen and (min-width: 510px) {
+  #Intro .sec_wrapper h1 {
+    font-size: 4em !important;
+    line-height: 85px !important; } }
+
+@media screen and (min-width: 600px) {
+  #Intro, #Work, #Skills, #About {
+    overflow-x: hidden; }
+    #Intro .sec_wrapper, #Work .sec_wrapper, #Skills .sec_wrapper, #About .sec_wrapper {
+      padding: 0 7% !important; }
+      #Intro .sec_wrapper .sub_header, #Work .sec_wrapper .sub_header, #Skills .sec_wrapper .sub_header, #About .sec_wrapper .sub_header {
+        max-width: 450px !important; }
+  #Intro .sec_wrapper h1 {
+    font-size: 5em !important;
+    line-height: 105px !important; }
+  #Work .sec_wrapper .sec_content .portfolio_work .cards {
+    justify-content: space-between !important; } }
+
 html, body {
   overflow: hidden;
   font-family: proxima-nova, sans-serif;
-  font-style: normal; }
+  font-style: normal;
+  height: 100vh; }
 
 .icon {
   width: 25px; }
@@ -60,6 +89,10 @@ ul {
 #Intro, #About {
   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); }
 
+#Work .sec_wrapper .sec_header h1, #Work .sec_wrapper .sec_header p, #Skills .sec_wrapper .sec_header h1, #Skills .sec_wrapper .sec_header p {
+  text-align: center;
+  margin: 0 auto; }
+
 #Intro .sec_wrapper .sec_header h1 {
   text-shadow: -5px 10px 11px rgba(0, 0, 0, 0.6);
   font-size: 2.7em;
@@ -84,13 +117,7 @@ ul {
   margin-top: 100px; }
 
 #Work .sec_wrapper .sec_content {
-  margin-bottom: 100px;
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  -webkit-justify-content: center; }
+  margin-bottom: 100px; }
   #Work .sec_wrapper .sec_content .portfolio_work .cards {
     width: 100%;
     display: flex;
@@ -129,6 +156,7 @@ ul {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
     background-color: #fff;
     width: 100%;
+    max-width: 400px;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
@@ -143,7 +171,7 @@ ul {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     height: 80px;
-    width: 90%; }
+    max-width: 310px; }
   #Work .sec_wrapper .sec_content .card__info a {
     height: 20px;
     float: right;
@@ -237,7 +265,7 @@ ul {
 #About .sec_wrapper .sec_content {
   position: absolute;
   z-index: -1;
-  bottom: 0; }
+  bottom: -10px; }
   #About .sec_wrapper .sec_content div img {
     width: 160%; }
 

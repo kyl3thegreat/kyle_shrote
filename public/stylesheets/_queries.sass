@@ -1,16 +1,28 @@
-@media (min-width: 350px)
+@media screen and (min-width: 350px)
     #Intro
         .sec_wrapper
             .sec_header
             h1 
                 font-size: 3em !important
                 line-height: 70px !important
+    #Work .sec_wrapper
+        .sec_content
+            .card__info
+                padding: 10px 20px
+                h3 
+                    margin: 0 !important
+                a
+                    margin-top: 5px !important
+                .card__description
+                    padding-top: 4px !important
+                    font-size: .8em !important
+                    display: block !important
     #Skills .sec_wrapper 
         .sec_content 
             .tile-cont-mobile
                 left: -35px !important
                 transform: scale(1.2) rotate(-10deg) !important
-@media (min-width: 370px)
+@media screen and (min-width: 370px)
     #Intro
         .sec_wrapper
             .sec_header
@@ -21,7 +33,7 @@
         .sec_content 
             .tile-cont-mobile
                 left: -25px !important
-@media (min-width: 390px)
+@media screen and (min-width: 390px)
     #Intro
         .sec_wrapper
             .sec_header
@@ -33,12 +45,69 @@
             .tile-cont-mobile
                 left: -20px !important
                 transform: scale(1.4) rotate(-10deg) !important
-@media (min-width: 410px)
+@media screen and (min-width: 410px)
     #Intro
         .sec_wrapper
             .sec_header
             h1 
                 font-size: 4em !important
                 line-height: 85px !important
+@media screen and (min-width: 510px)
+    #Intro
+        .sec_wrapper
+            .sec_header
+            h1 
+                font-size: 4em !important
+                line-height: 85px !important
+@media screen and (min-width: 600px)
+    #Intro, #Work, #Skills, #About
+        overflow-x: hidden
+        .sec_wrapper
+            padding: 0 7% !important
+            .sub_header
+                max-width: 450px !important
+
+    #Intro
+        .sec_wrapper
+            .sec_header
+            h1 
+                font-size: 5em !important
+                line-height: 105px !important
+    
+    #Work 
+        .sec_wrapper
+            .sec_content .portfolio_work
+                .cards
+                    justify-content: space-between !important
+
+
+
+//     @import "sections/intro"
+//     @import "sections/work"
+//     @import "sections/skills"
+//     @import "sections/about"
+//     #Work .sec_wrapper, #Skills .sec_wrapper 
+//         padding: 7%
+
+//     #Work .sec_header , #Skills .sec_header 
+//         text-align: left
+//         width: 600px
+
+//     #Work .sec_content , #Skills .sec_content 
+//         display: flex
+//         align-items: center
+//         justify-content: flex-start
+
+//     #Work .sec_header h1, #Skills .sec_header h1, #About .sec_header h1
+//         font-weight: 900
+//         font-size: 2.4em
+//         text-transform: uppercase
+//         padding-bottom: 5px
+//         border-bottom: 3px solid
+//         border-block-start-width: 1em
+//         width: fit-content
+
+//     #Work .sec_header .sub_header, #Skills .sec_header .sub_header
+//         line-height: 30px
 
     

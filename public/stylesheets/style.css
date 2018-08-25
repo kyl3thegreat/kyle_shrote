@@ -191,6 +191,9 @@
     font-size: 6em !important;
     letter-spacing: 15px !important;
     line-height: 110px !important; }
+  #About .sec_wrapper {
+    background-size: contain !important;
+    background-position-y: bottom !important; }
   #Work .sec_wrapper .sec_content .portfolio_work .cards {
     justify-content: space-around !important; } }
 

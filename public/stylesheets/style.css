@@ -405,7 +405,7 @@ ul {
   margin-top: 75px; }
   #Skills .sec_wrapper .sec_content .skills .skill {
     text-align: center;
-    margin: 25px 25px 0 25px; }
+    margin: 25px 30px 0 30px; }
     #Skills .sec_wrapper .sec_content .skills .skill h3 {
       margin: 10px auto;
       font-weight: 600;
@@ -415,38 +415,46 @@ ul {
       line-height: 22px;
       text-transform: uppercase; }
 
-#About .sec_wrapper .sec_header {
-  top: 50px;
-  position: absolute;
-  z-index: 1;
-  color: #ffffff; }
-  #About .sec_wrapper .sec_header h1 {
-    border-bottom: 3px solid #ffffff;
-    margin-top: 0; }
-  #About .sec_wrapper .sec_header .sub_header {
-    font-size: 1.5em;
-    font-weight: 900;
-    width: 280px; }
-  #About .sec_wrapper .sec_header .about_me p {
-    line-height: 35px; }
-  #About .sec_wrapper .sec_header .about_me button {
-    background-color: #000;
-    font-size: 1.6em;
-    color: #ffffff;
-    padding: 6px 10px;
-    font-weight: 600;
-    border-radius: 4px;
-    border: none; }
-  #About .sec_wrapper .sec_header .about_me ul li {
-    display: inline-block;
-    margin-right: 10px; }
-
-#About .sec_wrapper .sec_content {
-  position: absolute;
-  z-index: -1;
-  bottom: -10px; }
-  #About .sec_wrapper .sec_content div img {
-    width: 160%; }
+#About .sec_wrapper {
+  background-image: url("/images/profile/profile_nobg.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 4em;
+  background-size: cover; }
+  #About .sec_wrapper .sec_header {
+    top: 50px;
+    position: absolute;
+    z-index: 1;
+    color: #ffffff; }
+    #About .sec_wrapper .sec_header h1 {
+      border-bottom: 3px solid #ffffff;
+      margin-top: 0; }
+    #About .sec_wrapper .sec_header .sub_header {
+      font-size: 1.5em;
+      font-weight: 900;
+      width: 280px; }
+    #About .sec_wrapper .sec_header .about_me {
+      max-width: 400px; }
+      #About .sec_wrapper .sec_header .about_me p {
+        line-height: 35px; }
+      #About .sec_wrapper .sec_header .about_me button {
+        background-color: #000;
+        font-size: 1.6em;
+        color: #ffffff;
+        padding: 6px 10px;
+        font-weight: 600;
+        border-radius: 4px;
+        border: none; }
+      #About .sec_wrapper .sec_header .about_me ul li {
+        display: inline-block;
+        margin-right: 10px;
+        width: 35px; }
+  #About .sec_wrapper .sec_content {
+    position: absolute;
+    z-index: -1;
+    bottom: -10px; }
+    #About .sec_wrapper .sec_content div img {
+      width: 160%; }
 
 @-webkit-keyframes spin-right {
   100% {

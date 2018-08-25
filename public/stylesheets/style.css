@@ -405,7 +405,7 @@ ul {
   margin-top: 75px; }
   #Skills .sec_wrapper .sec_content .skills .skill {
     text-align: center;
-    margin-top: 25px; }
+    margin: 25px 25px 0 25px; }
     #Skills .sec_wrapper .sec_content .skills .skill h3 {
       margin: 10px auto;
       font-weight: 600;

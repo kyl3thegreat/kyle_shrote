@@ -19,7 +19,7 @@ html, body
   height: 100vh
 
 .icon 
-  width: 25px
+  width: 35px
 .tile
   width: 65px
 .profile
@@ -56,10 +56,14 @@ ul
 #Work .sec_wrapper
   .sec_header
     margin-bottom: 50px
-    
+    p 
+      mar
+
 #Skills .sec_wrapper
   .sec_header
     margin-top: 50px
+    p 
+      mar
 
 
 // Intro Styles
@@ -134,7 +138,7 @@ ul
         transition: all .4s cubic-bezier(0.175, 0.885, 0, 1)
         background-color: #fff
         width: 100%
-        max-width: 400px
+        max-width: 380px
         position: relative
         border-radius: 8px
         overflow: hidden
@@ -151,11 +155,12 @@ ul
         border-bottom-left-radius: 8px
         border-bottom-right-radius: 8px
         height: fit-content
-        max-width: 310px
+        max-width: 340px
         padding: 10px 20px 20px 20px
 
     .card__info a 
         height: 20px
+        width: 20px
         float: right
         margin: 5px 5px 0 5px
 
@@ -208,13 +213,9 @@ ul
       justify-content: space-around
       flex-wrap: wrap
       margin-top: 75px
-      div
+      .skill
         text-align: center
         margin-top: 25px
-        width: 130px
-        .tiles-cont
-          width: 150px
-          height: 100px
         h3 
           margin: 10px auto
           font-weight: 600
@@ -262,3 +263,19 @@ ul
       img
         width: 160%
 
+
+@-webkit-keyframes spin-right 
+    100% 
+      -webkit-transform: rotate(360deg)
+      -moz-transform: rotate(360deg)
+      -ms-transform: rotate(360deg)
+      -o-transform: rotate(360deg)
+      transform: rotate(360deg)
+      
+@-webkit-keyframes spin-left 
+    100% 
+      -webkit-transform: rotate(-360deg)
+      -moz-transform: rotate(-360deg)
+      -ms-transform: rotate(-360deg)
+      -o-transform: rotate(-360deg)
+      transform: rotate(-360deg)

@@ -26,23 +26,209 @@
     font-size: 4em !important;
     line-height: 85px !important; } }
 
+@media screen and (min-width: 500px) {
+  #Skills .sec_wrapper .sec_content .tile-cont-mobile {
+    display: none; }
+  #Skills .sec_wrapper .sec_content .skills .skill {
+    width: 250px !important; }
+  .skills:first-child {
+    width: 250px; }
+  .orbit-cont {
+    position: relative;
+    height: 250px;
+    width: 250px; }
+  .icon-html {
+    background-image: url("/images/icons/html.svg");
+    top: 25px;
+    left: -20px; }
+  .icon-css {
+    background-image: url("/images/icons/css.svg");
+    top: 25px;
+    left: 60px; }
+  .icon-javascript {
+    background-image: url("/images/icons/javascript.svg");
+    top: -20px;
+    left: 70px; }
+  .icon-php {
+    background-image: url("/images/icons/php.svg");
+    top: 160px;
+    left: 70px; }
+  .icon-node {
+    background-image: url("/images/icons/node.svg");
+    top: 55px;
+    left: 20px; }
+  .icon-express {
+    background-image: url("/images/icons/express.svg");
+    top: -20px;
+    left: 20px; }
+  .icon-sass {
+    background-image: url("/images/icons/sass.svg");
+    top: -20px;
+    left: 80px; }
+  .icon-bootstrap {
+    background-image: url("/images/icons/bootstrap.svg");
+    top: 85px;
+    left: 180px; }
+  .icon-materialize {
+    background-image: url("/images/icons/materialize.svg");
+    top: 85px;
+    left: -20px; }
+  .icon-mongodb {
+    background-image: url("/images/icons/mongodb.svg");
+    top: 120px;
+    left: 55px;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    position: absolute; }
+  .icon-mysql {
+    background-image: url("/images/icons/mysql.svg");
+    top: -25px;
+    left: 55px;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    position: absolute; }
+  .icon-jquery {
+    background-image: url("/images/icons/jquery.svg");
+    top: 120px;
+    left: 55px;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    position: absolute; }
+  .icon-react {
+    background-image: url("/images/icons/react.svg");
+    top: -25px;
+    left: 55px;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    position: absolute; }
+  .icon {
+    position: absolute;
+    height: 35px; }
+  .inner-orbit {
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    width: 80px;
+    height: 80px;
+    border-top: 2px #000 solid;
+    border-radius: 100%;
+    -webkit-animation: spin-right 10s linear infinite;
+    animation: spin-right 60s linear infinite; }
+  .bl {
+    border-left: 2px #000 solid !important;
+    border-top: none !important; }
+  .br {
+    border-right: 2px #000 solid !important;
+    border-left: none !important; }
+  .middle-orbit {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 180px;
+    height: 180px;
+    border-right: 1.5px #000 solid;
+    border-radius: 100%;
+    -webkit-animation: spin-left 15s linear infinite;
+    animation: spin-left 35s linear infinite; }
+  .middle-2-orbit {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    width: 150px;
+    height: 150px;
+    border-left: 2.5px #000 solid;
+    border-radius: 100%;
+    -webkit-animation: spin-left 15s linear infinite !important;
+    animation: spin-left 15s linear infinite !important; }
+  .outer-orbit {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 200px;
+    height: 200px;
+    border-top: 2px #000 solid;
+    border-bottom: 2px #000 solid;
+    border-radius: 100%;
+    -webkit-animation: spin-right 20s linear infinite !important;
+    animation: spin-right 35s linear infinite !important; } }
+
 @media screen and (min-width: 510px) {
   #Intro .sec_wrapper h1 {
     font-size: 4em !important;
     line-height: 85px !important; } }
 
 @media screen and (min-width: 600px) {
-  #Intro, #Work, #Skills, #About {
-    overflow-x: hidden; }
-    #Intro .sec_wrapper, #Work .sec_wrapper, #Skills .sec_wrapper, #About .sec_wrapper {
-      padding: 0 7% !important; }
-      #Intro .sec_wrapper .sub_header, #Work .sec_wrapper .sub_header, #Skills .sec_wrapper .sub_header, #About .sec_wrapper .sub_header {
-        max-width: 450px !important; }
-  #Intro .sec_wrapper h1 {
+  #Intro .sec_wrapper, #Work .sec_wrapper, #Skills .sec_wrapper, #About .sec_wrapper {
+    padding: 0 5% !important; }
+    #Intro .sec_wrapper .sub_header, #Work .sec_wrapper .sub_header, #Skills .sec_wrapper .sub_header, #About .sec_wrapper .sub_header {
+      max-width: 450px !important; }
+  #Work .sec_header, #Skills .sec_header {
+    width: 500px !important; }
+    #Work .sec_header h1, #Skills .sec_header h1 {
+      text-align: left !important;
+      margin: 0 !important; }
+    #Work .sec_header p, #Skills .sec_header p {
+      text-align: left !important;
+      margin: 20px 0 0 0 !important; }
+  #Intro .sec_wrapper .sec_header h1 {
     font-size: 5em !important;
     line-height: 105px !important; }
   #Work .sec_wrapper .sec_content .portfolio_work .cards {
-    justify-content: space-between !important; } }
+    justify-content: space-between !important; }
+    #Work .sec_wrapper .sec_content .portfolio_work .cards .card {
+      max-width: 260px !important; }
+      #Work .sec_wrapper .sec_content .portfolio_work .cards .card .card__info {
+        max-width: 220px !important; } }
+
+@media screen and (min-width: 650px) {
+  #Intro .sec_wrapper, #Work .sec_wrapper, #Skills .sec_wrapper, #About .sec_wrapper {
+    padding: 0 7% !important; }
+  #Intro .sec_wrapper .sec_header h1 {
+    font-size: 6em !important;
+    letter-spacing: 15px !important;
+    line-height: 110px !important; }
+  #Work .sec_wrapper .sec_content .portfolio_work .cards {
+    justify-content: space-around !important; } }
+
+@media screen and (min-width: 750px) {
+  #Intro .sec_wrapper, #Work .sec_wrapper, #Skills .sec_wrapper, #About .sec_wrapper {
+    padding: 0 7% !important; }
+  #Intro .sec_wrapper .sec_header h1 {
+    font-size: 7em !important;
+    letter-spacing: 15px !important;
+    line-height: 110px !important; }
+  #Work .sec_wrapper .sec_content .portfolio_work .cards {
+    justify-content: space-between !important; }
+    #Work .sec_wrapper .sec_content .portfolio_work .cards .card {
+      max-width: 300px !important; }
+      #Work .sec_wrapper .sec_content .portfolio_work .cards .card .card__info {
+        max-width: 260px !important; } }
+
+@media screen and (min-width: 850px) {
+  #Work .sec_wrapper .sec_content .portfolio_work .cards .card {
+    max-width: 350px !important; }
+    #Work .sec_wrapper .sec_content .portfolio_work .cards .card .card__info {
+      max-width: 310px !important; }
+  #Skills .sec_wrapper .sec_content .skills .skill {
+    margin: 25px 30px !important; } }
+
+@media screen and (min-width: 950px) {
+  #Skills .sec_wrapper .sec_content .skills .skill {
+    margin: 25px 50px !important; } }
+
+@media screen and (min-width: 1200px) {
+  #Skills .sec_wrapper .sec_content .skills .skill {
+    margin: 25px 0 !important; } }
+
+@media screen and (min-width: 1300px) {
+  #Work .sec_wrapper .sec_content .portfolio_work .cards .card {
+    max-width: 350px !important; }
+    #Work .sec_wrapper .sec_content .portfolio_work .cards .card .card__info {
+      max-width: 310px !important; } }
 
 html, body {
   overflow: hidden;
@@ -51,7 +237,7 @@ html, body {
   height: 100vh; }
 
 .icon {
-  width: 25px; }
+  width: 35px; }
 
 .tile {
   width: 65px; }
@@ -152,7 +338,7 @@ ul {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
     background-color: #fff;
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
@@ -167,10 +353,11 @@ ul {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     height: fit-content;
-    max-width: 310px;
+    max-width: 340px;
     padding: 10px 20px 20px 20px; }
   #Work .sec_wrapper .sec_content .card__info a {
     height: 20px;
+    width: 20px;
     float: right;
     margin: 5px 5px 0 5px; }
   #Work .sec_wrapper .sec_content .card__info a img {
@@ -216,19 +403,15 @@ ul {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 75px; }
-  #Skills .sec_wrapper .sec_content .skills div {
+  #Skills .sec_wrapper .sec_content .skills .skill {
     text-align: center;
-    margin-top: 25px;
-    width: 130px; }
-    #Skills .sec_wrapper .sec_content .skills div .tiles-cont {
-      width: 150px;
-      height: 100px; }
-    #Skills .sec_wrapper .sec_content .skills div h3 {
+    margin-top: 25px; }
+    #Skills .sec_wrapper .sec_content .skills .skill h3 {
       margin: 10px auto;
       font-weight: 600;
       width: fit-content;
       border-bottom: 2px solid #000; }
-    #Skills .sec_wrapper .sec_content .skills div ul li {
+    #Skills .sec_wrapper .sec_content .skills .skill ul li {
       line-height: 22px;
       text-transform: uppercase; }
 
@@ -264,5 +447,21 @@ ul {
   bottom: -10px; }
   #About .sec_wrapper .sec_content div img {
     width: 160%; }
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -159,7 +159,9 @@
 @media screen and (min-width: 510px) {
   #Intro .sec_wrapper h1 {
     font-size: 4em !important;
-    line-height: 85px !important; } }
+    line-height: 85px !important; }
+  #About .sec_wrapper {
+    background-position-x: 10em !important; } }
 
 @media screen and (min-width: 600px) {
   #Intro .sec_wrapper, #Work .sec_wrapper, #Skills .sec_wrapper, #About .sec_wrapper {
@@ -182,7 +184,9 @@
     #Work .sec_wrapper .sec_content .portfolio_work .cards .card {
       max-width: 260px !important; }
       #Work .sec_wrapper .sec_content .portfolio_work .cards .card .card__info {
-        max-width: 220px !important; } }
+        max-width: 220px !important; }
+  #About .sec_wrapper {
+    background-position-x: 12em !important; } }
 
 @media screen and (min-width: 650px) {
   #Intro .sec_wrapper, #Work .sec_wrapper, #Skills .sec_wrapper, #About .sec_wrapper {
@@ -193,7 +197,8 @@
     line-height: 110px !important; }
   #About .sec_wrapper {
     background-size: contain !important;
-    background-position-y: bottom !important; }
+    background-position-y: bottom !important;
+    background-position-x: 14em !important; }
   #Work .sec_wrapper .sec_content .portfolio_work .cards {
     justify-content: space-around !important; } }
 
@@ -209,7 +214,9 @@
     #Work .sec_wrapper .sec_content .portfolio_work .cards .card {
       max-width: 300px !important; }
       #Work .sec_wrapper .sec_content .portfolio_work .cards .card .card__info {
-        max-width: 260px !important; } }
+        max-width: 260px !important; }
+  #About .sec_wrapper {
+    background-position-x: 24em !important; } }
 
 @media screen and (min-width: 850px) {
   #Work .sec_wrapper .sec_content .portfolio_work .cards .card {
@@ -265,7 +272,10 @@ ul {
       line-height: 30px;
       max-width: 350px; }
 
-#Intro, #About {
+#Intro {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%); }
+
+#About {
   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); }
 
 #Work .sec_wrapper .sec_header h1, #Work .sec_wrapper .sec_header p, #Skills .sec_wrapper .sec_header h1, #Skills .sec_wrapper .sec_header p {
@@ -417,6 +427,16 @@ ul {
     #Skills .sec_wrapper .sec_content .skills .skill ul li {
       line-height: 22px;
       text-transform: uppercase; }
+
+#About:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: .4;
+  display: block;
+  top: 0; }
 
 #About .sec_wrapper {
   background-image: url("/images/profile/profile_nobg.png");

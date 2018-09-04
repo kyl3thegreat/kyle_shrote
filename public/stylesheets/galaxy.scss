@@ -1,0 +1,139 @@
+@function alphaRandom(){
+    @return random(1000)*.001;
+}
+@function revolution($pl-year-in-days){
+    @return $pl-year-in-days * 30 / 365.2563 + s;
+}
+@function stars($s, $max-area, $min-area : 0, $star-size : 0){
+    $stars : #{$min-area + random($max-area)}px #{$min-area + random($max-area)}px 0 #{$star-size}px rgba(255, 255, 255, alphaRandom());
+    @for $i from 1 to $s{
+        $stars: '#{$stars} , #{$min-area + random($max-area)}px #{$min-area + random($max-area)}px 0 #{$star-size}px rgba(255, 255, 255, #{alphaRandom()})'
+    }
+    @return unquote($stars);
+}
+
+
+.solar-syst:after {
+    content: '';
+    position: fixed;
+    height: 1px;
+    width: 1px;
+    top: 0;
+    background: white;
+    border-radius: 100%;
+    animation: scale revolution(1500) alternate linear infinite;
+}
+.asteroids-belt {
+    position: fixed;
+    opacity: .7;
+    top: 5%;
+    left: 5%;
+    overflow: hidden;
+    height: 800px;
+    width: 800px;
+    border-radius: 50% 50%;
+}
+.asteroids-belt:before {
+    content: '';
+    z-index: 500;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top:200px;
+    left:200px;
+    overflow: hidden;
+    border-radius: 50% 50%;
+    animation: orb2 revolution(2191) linear infinite;
+    box-shadow: stars(808, 800, -380, -199)
+}
+@keyframes orb {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(-360deg);
+    }
+}
+@keyframes orb2 {
+    from {
+        transform: rotate(-360deg);
+    }
+    to { 
+        transform: rotate(0deg);
+    }
+}
+@keyframes scale{
+    from {
+      transform:scale(1)
+    }
+    to{
+      transform:scale(1.6)
+    }
+  }
+
+
+@media screen and (min-width: 350px){
+    .solar-syst:after {
+        box-shadow: stars(1800, 1000)
+    }
+}
+    
+@media screen and (min-width: 370px){
+    .solar-syst:after {
+    }
+}
+    
+@media screen and (min-width: 390px){
+    .solar-syst:after {
+    }
+}
+
+@media screen and (min-width: 410px){
+    .solar-syst:after {
+    }
+}
+    
+@media screen and (min-width: 510px){
+    .solar-syst:after {
+    }
+}
+
+@media screen and (min-width: 600px){
+    .solar-syst:after {
+    }
+}
+
+@media screen and (min-width: 650px){
+    .solar-syst:after {
+    }
+}
+
+@media screen and (min-width: 750px){
+    .solar-syst:after {
+        
+    }
+}
+    
+@media screen and (min-width: 850px){
+    .solar-syst:after {
+    }
+}
+    
+@media screen and (min-width: 950px){
+    .solar-syst:after {
+        box-shadow: stars(2000, 1600)
+    }
+}
+    
+@media screen and (min-width: 1200px){
+    .solar-syst:after {
+    }
+}
+    
+@media screen and (min-width: 1300px){
+    .solar-syst:after {
+        box-shadow: stars(3000, 2000)
+    }
+}
+    
+    
